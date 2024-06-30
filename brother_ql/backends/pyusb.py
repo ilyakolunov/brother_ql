@@ -98,7 +98,7 @@ class BrotherQLBackendPyUSB(BrotherQLBackendGeneric):
             self.was_kernel_driver_active = False
 
         # set the active configuration. With no arguments, the first configuration will be the active one
-        self.dev.set_configuration()
+        # self.dev.set_configuration()
 
         cfg = self.dev.get_active_configuration()
         intf = usb.util.find_descriptor(cfg, bInterfaceClass=7)
